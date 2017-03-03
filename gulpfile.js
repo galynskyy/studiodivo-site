@@ -4,14 +4,15 @@ var browserSync = require("browser-sync").create();
 var autoprefixer = require("autoprefixer");
 var cssnano = require("cssnano");
 var postcss = require("gulp-postcss");
+var uglify = require("gulp-uglifyjs");
 
 gulp.task("default", ["build"]);
 gulp.task("dev", ["build", "browserSync", "watch"]);
-gulp.task("build", ["styles", "html", "js", "assets", "fonts"]);
+gulp.task("build", ["styles", "html", "js", "assets", "ajax", "fonts"]);
 
 gulp.task("styles", function() {
 	return gulp.src("./src/styles/**/*.css")
-		.pipe(concat("build.min.css"))
+		.pipe(concat("bundle.min.css"))
 		.pipe(postcss([autoprefixer, cssnano]))
 		.pipe(gulp.dest("./public/styles/"));
 });
@@ -19,6 +20,11 @@ gulp.task("styles", function() {
 gulp.task("html", function() {
 	return gulp.src("./src/*.html")
 		.pipe(gulp.dest("./public/"));
+});
+
+gulp.task("ajax", function() {
+	return gulp.src("./src/ajax/**/*.php")
+		.pipe(gulp.dest("./public/ajax/"));
 });
 
 gulp.task("assets", function() {
@@ -33,7 +39,8 @@ gulp.task("fonts", function() {
 
 gulp.task("js", function() {
 	return gulp.src("./src/scripts/**/*.js")
-		.pipe(concat("build.js"))
+		.pipe(concat("bundle.min.js"))
+		.pipe(uglify())
 		.pipe(gulp.dest("./public/scripts/"));
 });
 
