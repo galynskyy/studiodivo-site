@@ -429,8 +429,17 @@ html, body, h1 {
 	.services-wrapper {
 		max-width: 300px;
 	}
-	.advantages-wrapper {
+	.advantages {
+		display: none;
+	}
+	/*.advantages-wrapper {
 		max-width: 300px;
+	}*/
+	.portfolio__list .portfolio__item {
+		display: none;
+	}
+	.portfolio__list .portfolio__item:first-child {
+		display: block;
 	}
 	.portfolio-wrapper {
 		max-width: 300px;
@@ -473,5 +482,4 @@ html, body, h1 {
 	.services__item {
 		margin: 0 0 20px 0;
 	}
-	
 }
