@@ -176,7 +176,7 @@ html, body, h1 {
 
 .services__list {
 	display: flex;
-	margin: 0 0 20px 0;
+	margin: 0 0 20px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -210,16 +210,15 @@ html, body, h1 {
 .services__item__heading {
 	font: 28px "RobotoCondensed-Regular", sans-serif;
 	color: #fff;
-	margin: 0 0 20px 0;
+	margin: 0 0 20px;
 	padding: 5px;
-	/*background: rgba(63, 157, 37, 1);*/
 	background: #04b468;
 }
 
 .services__item__price {
 	font: bold 28px "RobotoCondensed-Regular", sans-serif;
 	color: #000;
-	margin: 0 0 20px 0;
+	margin: 0 0 20px;
 }
 
 .services__item__description {
@@ -343,7 +342,10 @@ html, body, h1 {
 
 .portfolio__list {
 	display: flex;
-	margin: 0 0 4px 0;
+	margin: 0 0 4px;
+	padding: 0;
+	font-size: 0;
+	list-style: none;
 }
 
 .portfolio__item {
@@ -367,7 +369,6 @@ html, body, h1 {
 	display: flex;
 	min-height: 460px;
 	background: #c5e1a5;
-	/*background: url("../assets/images/feedback/background.jpg") center/center no-repeat;*/
 }
 
 .feedback-wrapper {
@@ -393,7 +394,7 @@ html, body, h1 {
 }
 
 .feedback__input {
-	margin: 0 0 20px 0;
+	margin: 0 0 20px;
 	min-height: 20px;
 	min-width: 300px;
 	border: 2px solid #acadaf;
@@ -559,7 +560,7 @@ html, body, h1 {
 	}
 
 	.footer-about {
-		margin: 0 0 10px 0;
+		margin: 0 0 10px;
 	}
 
 	.footer-social__heading {
@@ -608,7 +609,7 @@ html, body, h1 {
 	}
 
 	.services__item {
-		margin: 0 0 20px 0;
+		margin: 0 0 20px;
 	}
 	
 }
