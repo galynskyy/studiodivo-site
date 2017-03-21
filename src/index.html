@@ -20,25 +20,32 @@
 							<h1 class="header-company__caption">Услуги фотографа</h1>
 						</div>
 					</div>
-					<div class="header-info">
-						<div class="header-contacts">
-							<h1 class="header-contacts__address">ул. Журинская, 80/6, оф. 6</h1>
-							<h1 class="header-contacts__phone">+7 (913) 985-28-44 / +7 (923) 244-55-86</h1>
-						</div>
-						<div class="header-feedback">
-							<button class="header-feedback__button">Обратная связь</button>
-						</div>
-					</div>
+					<nav class="navigation">
+						<ul class="navigation-list">
+							<li class="navigation-list__item _active">
+								<a class="navigation-list__link _active">Главная</a>
+							</li>
+							<li class="navigation-list__item">
+								<a class="navigation-list__link">Портфолио</a>
+							</li>
+							<li class="navigation-list__item">
+								<a class="navigation-list__link">Контакты</a>
+							</li>
+							<li class="navigation-list__item _order">
+								<a class="navigation-list__link _order">Заказать</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 
 			<div class="slider">
 				<div class="slider-content">
-					<h1 class="slider-content__text">Яркие образы Ваших предложений</h1>
+					<h1 class="slider-content__text">Оказываем все виды фотоуслуг в Новосибирске</h1>
 				</div>
 			</div>
 
-			<div class="about">
+			<!-- <div class="about">
 				<div class="about-wrapper">
 					<h1 class="about__heading">Фотосъемка в Новосибирске</h1>
 					<p class="about__text">
@@ -49,19 +56,88 @@
 					</p>
 				</div>
 
+			</div> -->
+
+			<div class="services">
+				<div class="services-section">
+					<div class="services-wrapper">
+						<h1 class="services__heading">Услуги</h1>
+						<p class="services__caption">
+							Все услуги сервиса делятся на четыре основных подразделения<br />
+							(кликните на интересующий вас раздел).
+						</p>
+					</div>
+				</div>
+
+				<div class="services__list">
+					<div class="services__item">
+						<img class="services__item__image" src="assets/icons/services/shoes.svg"></img>
+						<h1 class="services__item__heading">Предметная съемка</h1>
+
+						<p class="services__item__description">
+							Описание еды
+						</p>
+
+						<h1 class="services__item__price">50 руб. / фото</h1>
+					</div>
+					<div class="services__item">
+						<img class="services__item__image" src="assets/icons/services/interior.svg"></img>
+						<h1 class="services__item__heading">Интерьерная съемка</h1>
+
+						<p class="services__item__description">
+							Описание мебели
+						</p>
+
+						<h1 class="services__item__price">1500 руб. / час</h1>
+					</div>
+				</div>
+				<div class="services__list">
+					<div class="services__item">
+						<img class="services__item__image" src="assets/icons/services/apartments.svg"></img>
+						<h1 class="services__item__heading">Съемка недвижимости</h1>
+
+						<p class="services__item__description">
+							Описание одежды
+						</p>
+
+						<h1 class="services__item__price">1500 руб. / час</h1>
+					</div>
+					<div class="services__item">
+						<img class="services__item__image" src="assets/icons/services/car.svg"></img>
+						<h1 class="services__item__heading">Съемка автомобилей</h1>
+						<p class="services__item__description">
+							Описание сумок
+						</p>
+
+						<h1 class="services__item__price">1500 руб. / час</h1>
+					</div>
+				</div>
+
+				<h1 class="services__description">Сумма минимального заказа составляет 1500 руб.</h1>
+
+				<a class="services__button" href="#">Все услуги</a>
 			</div>
 
 			<div class="advantages">
-				<div class="advantages-wrapper">
-					<h1 class="advantages__heading">Наши преимущества</h1>
+				<div class="advantages-section">
+					<div class="advantages-wrapper">
+						<h1 class="advantages__heading">Наши преимущества</h1>
+						<p class="advantages__caption">
+							Наш опыт и репутация — это самое главное, но есть еще<br />
+							несколько очень важных моментов:
+						</p>
+					</div>
+				</div>
 
-					<div class="advantages__list">
-						<div class="advantages__item">
+				<ul class="advantages__list">
+					<li class="advantages__item">
+						<div class="advantages__item-wrapper">
 							<div class="advantages__image">
 								<img class="advantages__icon" src="assets/icons/one.svg"></img>
 							</div>
-							<div class="advantages__content">
-								<p class="advantages__text">
+							<div class="advantages-content">
+								<h1 class="advantages-content__title"></h1>
+								<p class="advantages-content__text">
 									Обратившись к нам для фотосъемки товаров для каталога Вашего интернет-магазина,
 									Вы существенно повысите эффективность своего бизнеса.
 									Качественные фото с разных ракурсов позволят подчеркнуть достоинства Ваших предложений
@@ -69,12 +145,15 @@
 								</p>
 							</div>
 						</div>
-						<div class="advantages__item">
+					</li>
+					<li class="advantages__item">
+						<div class="advantages__item-wrapper">
 							<div class="advantages__image">
 								<img class="advantages__icon" src="assets/icons/two.svg"></img>
 							</div>
 							<div class="advantages__content">
-								<p class="advantages__text">
+								<h1 class="advantages-content__title"></h1>
+								<p class="advantages-content__text">
 									Показателем качества и профессионального уровня изготовителя продукции
 									или исполнителя услуг является его галерея выполненных проектов.
 									От качества представленных в галерее фото зависит выбор потенциального покупателя или заказчика.
@@ -82,12 +161,15 @@
 								</p>
 							</div>
 						</div>
-						<div class="advantages__item">
+					</li>
+					<li class="advantages__item">
+						<div class="advantages__item-wrapper">
 							<div class="advantages__image">
 								<img class="advantages__icon" src="assets/icons/three.svg"></img>
 							</div>
 							<div class="advantages__content">
-								<p class="advantages__text">
+								<h1 class="advantages-content__title"></h1>
+								<p class="advantages-content__text">
 									Рекламное или частное объявление, обеспеченное качественными фото,
 									не только привлекает к себе внимание, но и формирует положительный образ,
 									по силе воздействия многократно превосходящий текстовое описание товара или услуги.
@@ -95,58 +177,8 @@
 								</p>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="services">
-				<div class="services-wrapper">
-					<h1 class="services__heading">Услуги</h1>
-
-					<div class="services__list">
-						<div class="services__item">
-							<img class="services__item__image" src="assets/images/services/subject.jpg"></img>
-							<h1 class="services__item__heading">Предметная съемка</h1>
-
-							<p class="services__item__description">
-								Описание еды
-							</p>
-
-							<h1 class="services__item__price">50 руб. / фото</h1>
-						</div>
-						<div class="services__item">
-							<img class="services__item__image" src="assets/images/services/interior.jpg"></img>
-							<h1 class="services__item__heading">Интерьерная съемка</h1>
-
-							<p class="services__item__description">
-								Описание мебели
-							</p>
-
-							<h1 class="services__item__price">1500 руб. / час</h1>
-						</div>
-						<div class="services__item">
-							<img class="services__item__image" src="assets/images/services/realty.jpg"></img>
-							<h1 class="services__item__heading">Съемка недвижимости</h1>
-
-							<p class="services__item__description">
-								Описание одежды
-							</p>
-
-							<h1 class="services__item__price">1500 руб. / час</h1>
-						</div>
-						<div class="services__item">
-							<img class="services__item__image" src="assets/images/services/car.jpg"></img>
-							<h1 class="services__item__heading">Съемка автомобилей</h1>
-							<p class="services__item__description">
-								Описание сумок
-							</p>
-
-							<h1 class="services__item__price">1500 руб. / час</h1>
-						</div>
-					</div>
-
-					<h1 class="services__description">Сумма минимального заказа составляет 1500 руб.</h1>
-				</div>
+					</li>
+				</ul>
 			</div>
 
 			<div class="portfolio">

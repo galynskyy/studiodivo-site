@@ -4,3 +4,38 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: "RobotoCondensed-LightItalic";
+	src: url("../fonts/RobotoCondensed-LightItalic.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "RobotoCondensed-Light";
+	src: url("../fonts/RobotoCondensed-Light.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "RobotoCondensed-Italic";
+	src: url("../fonts/RobotoCondensed-Italic.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "RobotoCondensed-BoldItalic";
+	src: url("../fonts/RobotoCondensed-BoldItalic.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "RobotoCondensed-Bold";
+	src: url("../fonts/RobotoCondensed-Bold.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
