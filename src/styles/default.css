@@ -594,6 +594,11 @@ html, body, h1 {
 		flex-direction: column;
 	}
 
+	.services__item:hover {
+		transform: scale(1);
+		outline: none;
+	}
+
 	.advantages__list {
 		flex-direction: column;
 	}
