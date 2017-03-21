@@ -10,7 +10,7 @@ $(".footer-social__link").click(function() {
 	yaCounter42619424.reachGoal("social");
 });
 
-$(".header-feedback__button").click(function() {
+$(".feedback-form__scroll").click(function() {
 	var height = $("body").height(); 
 	$("body").animate({"scrollTop": height}, "slow"); 
 });

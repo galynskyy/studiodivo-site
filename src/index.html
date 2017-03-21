@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="styles/build.min.css">
+		<link rel="stylesheet" href="styles/bundle.min.css">
 		<link rel="shortcut icon" href="assets/favicon.png" type="image/png">
 		<title>Студия Диво - услуги проффесионального фотографа, заказ предметных съёмок</title>
 	</head>
@@ -17,7 +17,7 @@
 						</div>
 						<div class="header-company">
 							<h1 class="header-company__name">Диво студия</h1>
-							<h1 class="header-company__caption">Предметная фотосьемка</h1>
+							<h1 class="header-company__caption">Услуги фотографа</h1>
 						</div>
 					</div>
 					<div class="header-info">
@@ -26,7 +26,7 @@
 							<h1 class="header-contacts__phone">+7 (913) 985-28-44 / +7 (923) 244-55-86</h1>
 						</div>
 						<div class="header-feedback">
-							<button class="header-feedback__button">Обратная связь</button>
+							<button class="header-feedback__button feedback-form__scroll">Обратная связь</button>
 						</div>
 					</div>
 				</div>
@@ -42,7 +42,7 @@
 				<div class="about-wrapper">
 					<h1 class="about__heading">Предметная фотосьемка в Новосибирске</h1>
 					<p class="about__text">
-						Предметная фотосъемка для каталогов интернет-магазинов  и интернет-витрин, съемка изделий и объектов для формирования галерей выполненных работ и портфолио, съемка автомобилей и объектов недвижимости для рекламы и частных объявлений- всё это наша специализация. Съемка товаров для каталогов производится у заказчика на нашем оборудовании.
+						Фотосъемка для каталогов интернет-магазинов и интернет-витрин, съемка изделий и объектов для формирования галерей выполненных работ и портфолио, съемка автомобилей и объектов недвижимости для рекламы и частных объявлений - всё это наша специализация. Съемка товаров для каталогов производится у заказчика на нашем оборудовании.
 					</p>
 				</div>
 				
@@ -52,7 +52,41 @@
 				<div class="advantages-wrapper">
 					<h1 class="advantages__heading">Наши преимущества</h1>
 
-					<div class="advantages__list">
+					<ul class="advantages__list">
+						<li class="advantages__item">
+							<div class="advantages__visual">
+								<img class="advantages__icon" src="assets/icons/camera.svg" />
+							</div>
+							<h1 class="advantages__item-heading">Большой опыт фотосъемки</h1>
+						</li>
+						<li class="advantages__item">
+							<div class="advantages__visual">
+								<img class="advantages__icon" src="assets/icons/clock.svg" />
+							</div>
+							<h1 class="advantages__item-heading">Команда специалистов</h1>
+						</li>
+						<li class="advantages__item">
+							<div class="advantages__visual">
+								<img class="advantages__icon" src="assets/icons/glasses.svg" />
+							</div>
+							<h1 class="advantages__item-heading">Оперативность</h1>
+						</li>
+						<li class="advantages__item">
+							<div class="advantages__visual">
+								<img class="advantages__icon" src="assets/icons/settings.svg" />
+							</div>
+							<h1 class="advantages__item-heading">Профессиональное оборудование</h1>
+						</li>
+						<li class="advantages__item">
+							<div class="advantages__visual">
+								<img class="advantages__icon" src="assets/icons/like.svg" />
+							</div>
+							<h1 class="advantages__item-heading">Высокое качество</h1>
+						</li>
+					</ul>
+
+					<button class="feedback__button-sections feedback-form__scroll">Оставить заявку</button>
+					<!-- <div class="advantages__list">
 						<div class="advantages__item">
 							<div class="advantages__image">
 								<img class="advantages__icon" src="assets/icons/one.svg"></img>
@@ -83,112 +117,65 @@
 								</p>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 
 			<div class="services">
 				<div class="services-wrapper">
-					<h1 class="services__heading">Услуги</h1>
+					<h1 class="services__heading">Предложения</h1>
 
-					<div class="services__list">
-						<div class="services__item">
-							<img class="services__item__image" src="assets/images/services/food.jpg"></img>
-							<h1 class="services__item__heading">Еда</h1>
+					<ul class="services__list">
+						<li class="services__item">
+							<img class="services__item__image" src="assets/images/services/shoes.jpg"></img>
+							<h1 class="services__item__heading">Предметная съемка</h1>
 
 							<p class="services__item__description">
 								Описание еды
 							</p>
 
 							<h1 class="services__item__price">50 руб. / фото</h1>
-						</div>
-						<div class="services__item">
+
+							<button class="services__item__button feedback-form__scroll">Заказать</button>
+						</li>
+						<li class="services__item">
 							<img class="services__item__image" src="assets/images/services/furniture.jpg"></img>
-							<h1 class="services__item__heading">Мебель</h1>
+							<h1 class="services__item__heading">Интерьерная съемка</h1>
 
 							<p class="services__item__description">
 								Описание мебели
 							</p>
 
-							<h1 class="services__item__price">50 руб. / фото</h1>
-						</div>
-						<div class="services__item">
-							<img class="services__item__image" src="assets/images/services/clothes.jpg"></img>
-							<h1 class="services__item__heading">Одежда</h1>
+							<h1 class="services__item__price">1500 руб. / час</h1>
+
+							<button class="services__item__button feedback-form__scroll">Заказать</button>
+						</li>
+						<li class="services__item">
+							<img class="services__item__image" src="assets/images/services/building.jpg"></img>
+							<h1 class="services__item__heading">Съемка недвижимости</h1>
 
 							<p class="services__item__description">
 								Описание одежды
 							</p>
 
-							<h1 class="services__item__price">50 руб. / фото</h1>
-						</div>
-					</div>
+							<h1 class="services__item__price">1500 руб. / час</h1>
 
-					<div class="services__list">
-						<div class="services__item">
-							<img class="services__item__image" src="assets/images/services/bag.jpg"></img>
-							<h1 class="services__item__heading">Сумки</h1>
+							<button class="services__item__button feedback-form__scroll">Заказать</button>
+						</li>
+						<li class="services__item">
+							<img class="services__item__image" src="assets/images/services/auto.jpg"></img>
+							<h1 class="services__item__heading">Съемка автомобилей</h1>
 							<p class="services__item__description">
 								Описание сумок
 							</p>
 
-							<h1 class="services__item__price">50 руб. / фото</h1>
-						</div>
-						<div class="services__item">
-							<img class="services__item__image" src="assets/images/services/shoes.jpg"></img>
-							<h1 class="services__item__heading">Обувь</h1>
+							<h1 class="services__item__price">1500 руб. / час</h1>
 
-							<p class="services__item__description">
-								Описание обуви
-							</p>
+							<button class="services__item__button feedback-form__scroll">Заказать</button>
+						</li>
+					</ul>
 
-							<h1 class="services__item__price">50 руб. / фото</h1>
-						</div>
-						<div class="services__item">
-							<img class="services__item__image" src="assets/images/services/equipment.jpg"></img>
-							<h1 class="services__item__heading">Техника</h1>
-
-							<p class="services__item__description">
-								Описание техники
-							</p>
-
-							<h1 class="services__item__price">50 руб. / фото</h1>
-						</div>
-					</div>
-
-					<div class="services__list">
-						<div class="services__item">
-							<img class="services__item__image" src="assets/images/services/sport.jpg"></img>
-							<h1 class="services__item__heading">Спортинвентарь</h1>
-							<p class="services__item__description">
-								Описание спортинвентаря
-							</p>
-
-							<h1 class="services__item__price">50 руб. / фото</h1>
-						</div>
-						<div class="services__item">
-							<img class="services__item__image" src="assets/images/services/auto.jpg"></img>
-							<h1 class="services__item__heading">Автомобили</h1>
-
-							<p class="services__item__description">
-								Описание автомобилей
-							</p>
-
-							<h1 class="services__item__price">50 руб. / фото</h1>
-						</div>
-						<div class="services__item">
-							<img class="services__item__image" src="assets/images/services/building.jpg"></img>
-							<h1 class="services__item__heading">Недвижимость</h1>
-
-							<p class="services__item__description">
-								Описание недвижимости
-							</p>
-
-							<h1 class="services__item__price">50 руб. / фото</h1>
-						</div>
-					</div>
-
-					<h1 class="services__description">Сумма минимального заказа составляет 1000 руб.</h1>
+					<h1 class="services__description">Сумма минимального заказа составляет 1500 руб.</h1>
 				</div>
 			</div>
 
@@ -410,6 +397,6 @@
 				ga('send', 'pageview');
 			</script>
 		<!-- /Google -->
-		<script src="scripts/build.js"></script>
+		<script src="scripts/bundle.min.js"></script>
 	</body>
 </html>
