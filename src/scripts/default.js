@@ -11,8 +11,9 @@ $(".footer-social__link").click(function() {
 });
 
 $(".feedback-form__scroll").click(function() {
-	var height = $("body").height(); 
-	$("body").animate({"scrollTop": height}, "slow"); 
+	var height = $("body").height();
+	$("body").animate({"scrollTop": height}, "slow");
+	yaCounter42619424.reachGoal("order");
 });
 
 $(".feedback-form").on("submit", function() {
