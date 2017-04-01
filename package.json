@@ -3,26 +3,33 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "browser-sync": "^2.18.8",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^6.4.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/galynskyy/landing-photo.git"
+    "url": "git+https://github.com/galynskyy/studiodivo-site.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/galynskyy/landing-photo/issues"
+    "url": "https://github.com/galynskyy/studiodivo-site/issues"
   },
-  "homepage": "https://github.com/galynskyy/landing-photo#readme",
-  "dependencies": {
-    "autoprefixer": "^6.6.0",
-    "browser-sync": "^2.18.5",
-    "cssnano": "^3.9.1",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-postcss": "^6.2.0",
-    "gulp-uglifyjs": "^0.6.2"
-  }
+  "homepage": "https://github.com/galynskyy/studiodivo-site#readme"
 }

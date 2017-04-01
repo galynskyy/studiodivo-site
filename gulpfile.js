@@ -8,7 +8,7 @@ var uglify = require("gulp-uglifyjs");
 
 gulp.task("default", ["build"]);
 gulp.task("dev", ["build", "browserSync", "watch"]);
-gulp.task("build", ["styles", "html", "js", "ajax" ,"assets", "fonts"]);
+gulp.task("build", ["styles", "html", /*"js",*/ "ajax" ,"assets", "fonts"]);
 
 gulp.task("styles", function() {
 	return gulp.src("./src/styles/**/*.css")
@@ -37,12 +37,12 @@ gulp.task("fonts", function() {
         .pipe(gulp.dest("./public/fonts/"));
 });
 
-gulp.task("js", function() {
-	return gulp.src("./src/scripts/**/*.js")
+/*gulp.task("js", function() {
+	return gulp.src("./src/scripts/!**!/!*.js")
 		.pipe(concat("bundle.min.js"))
 		.pipe(uglify())
 		.pipe(gulp.dest("./public/scripts/"));
-});
+});*/
 
 gulp.task("browserSync", function () {
 	browserSync.init({
@@ -55,6 +55,6 @@ gulp.task("browserSync", function () {
 gulp.task("watch", function() {
 	gulp.watch("./src/styles/**/*.css", ["styles"]);
 	gulp.watch("./src/*.html", ["html"]);
-	gulp.watch("./src/scripts/**/*.js", ["js"]);
+	/*gulp.watch("./src/scripts/!**!/!*.js", ["js"]);*/
 	gulp.watch('./src/**/*.*', browserSync.reload);
 });
