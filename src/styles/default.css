@@ -320,10 +320,48 @@ html, body, h1 {
 	text-align: justify;
 }
 
+.offer {
+	/*display: flex;*/
+	display: none;
+	min-height: 240px;
+	background: #dedede;
+}
+
+.offer-wrapper {
+	max-width: 960px;
+	min-height: 180px;
+	margin: 40px auto;
+}
+
+.offer__heading {
+	font: bold 36px "RobotoCondensed-Regular", sans-serif;
+	color: #4a4a4a;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.offer__text {
+	font: 18px "RobotoCondensed-Regular", sans-serif;
+	color: #000;
+	text-align: justify;
+}
+
 .portfolio {
 	display: flex;
 	min-height: 240px;
 	text-align: center;
+}
+
+.portfolio._building {
+	background: #ededed;
+}
+
+/*.portfolio._auto {
+	background: #dedede;
+}*/
+
+.portfolio._interior {
+	background: #ededed;
 }
 
 .portfolio-wrapper {
@@ -358,7 +396,7 @@ html, body, h1 {
 
 .portfolio__image {
 	max-height: 180px;
-	max-width: 230px;
+	max-width: 314px;
 }
 
 .portfolio__image:hover {
@@ -551,6 +589,10 @@ html, body, h1 {
 	.portfolio__list .portfolio__item {
 		display: none;
 		margin: 0;
+	}
+
+	.portfolio__image {
+		max-width: 298px;
 	}
 
 	.footer-wrapper {
